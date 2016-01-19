@@ -8,10 +8,19 @@ var triangleTracker = function(side1, side2, side3){
   } else {
     return "scalene";
   }
-}
+};
 
 $(document).ready(function() {
-  $("#triangleForm").submit(function(){
-    var side1 = parseInt($("input[name='side1']").val())
+
+  $("form").submit(function(event){
+    // alert("first");
+    var side_1 = parseInt($("input[name='side1']").val());
+    var side_2 = parseInt($("input[name='side2']").val());
+    var side_3 = parseInt($("input[name='side3']").val());
+    // alert("second");
+    $("#triangleResult").text(triangleTracker(side_1, side_2, side_3));
+    event.preventDefault();
+    // alert("third-last");
   });
+
 });
