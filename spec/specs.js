@@ -1,5 +1,5 @@
 describe("triangleTracker", function(){
-  it("is a triangle", function() {
+  it("is not  a triangle", function() {
     expect(triangleTracker(1, 2, 5)).to.equal("not a");
   });
   it("is equilateral if all sides are equal", function() {

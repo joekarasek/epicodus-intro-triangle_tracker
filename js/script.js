@@ -9,3 +9,9 @@ var triangleTracker = function(side1, side2, side3){
     return "scalene";
   }
 }
+
+$(document).ready(function() {
+  $("#triangleForm").submit(function(){
+    var side1 = parseInt($("input[name='side1']").val())
+  });
+});
