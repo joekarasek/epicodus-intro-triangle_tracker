@@ -8,4 +8,7 @@ describe("triangleTracker", function(){
   it("is isosceles if two sides are equal, and the third side must be no more than the sum of the other two", function() {
     expect(triangleTracker(2, 2, 1)).to.equal("isosceles");
   });
+  it("is a scalene triangle", function() {
+    expect(triangleTracker(2, 3, 4)).to.equal("scalene");
+  });
 });
